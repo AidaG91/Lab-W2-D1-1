@@ -131,3 +131,57 @@ section h2 {
   padding: 2rem 0;
 }
 
+/* OTROS HOBBIES STYLE */
+
+.otros {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.otros img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(50, 56, 47);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #e0b046;
+  border-radius: 10px;
+}
+
+.cadaHobby {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+}
+
+.cadaHobby:hover .overlay {
+  opacity: 1;
+}
+
+.subtitle {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
