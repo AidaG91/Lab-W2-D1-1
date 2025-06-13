@@ -61,7 +61,9 @@ main {
 /* MAIN HOBBIES */
 section h2 {
   text-align: center;
-  padding: 1rem;
+  padding: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .mainHobbies {
@@ -184,4 +186,12 @@ section h2 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #e0b046;
+    text-align: center;
+    padding: 1rem;
 }
