@@ -43,19 +43,91 @@ body {
 
 /* MAIN COMÚN */
 main {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* INTRODUCCION */
 
 #introduccion {
-    padding: 1rem;
-    text-align: justify;
-    border: 5px inset rgb(204, 79, 34);
+  padding: 1rem;
+  text-align: justify;
+  border: 5px inset #e0b046;
 }
 
 /* MAIN HOBBIES */
+section h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.mainHobbies {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.mainHobbies img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-container {
+  perspective: 1000px;
+  width: 300px;
+  height: 400px;
+  margin: 1rem;
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  background-color: #e0b046;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(50, 56, 47);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-back h3 {
+  padding: 2rem 0;
+}
+
